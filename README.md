@@ -1,18 +1,19 @@
 # hmacproxy HMAC authentication proxy server
 
 Proxy server that signs and authenticates HTTP requests using an HMAC
-signature; uses the [github.com/18F/hmacauth Go package](https://github.com/18F/hmacauth).
+signature; uses the [github.com/mbland/hmacauth Go
+package](https://github.com/mbland/hmacauth).
 
-[![Build Status](https://travis-ci.org/18F/hmacproxy.svg?branch=master)](https://travis-ci.org/18F/hmacproxy)
+[![Build Status](https://travis-ci.org/mbland/hmacproxy.svg?branch=master)](https://travis-ci.org/mbland/hmacproxy)
 
-[![Coverage Status](https://coveralls.io/repos/18F/hmacproxy/badge.svg?branch=master&service=github)](https://coveralls.io/github/18F/hmacproxy?branch=master)
+[![Coverage Status](https://coveralls.io/repos/mbland/hmacproxy/badge.svg?branch=master&service=github)](https://coveralls.io/github/mbland/hmacproxy?branch=master)
 
 ## Installation
 
 For now, install from source:
 
 ```sh
-$ go get github.com/18F/hmacproxy
+$ go get github.com/mbland/hmacproxy
 ```
 
 ## Testing out locally
@@ -41,7 +42,7 @@ $ hmacproxy -port 8080 -secret "foobar" -sign-header "X-Signature" \
 In the third shell:
 
 ```sh
-$ curl -i localhost:8080/18F/hmacproxy
+$ curl -i localhost:8080/mbland/hmacproxy
 
 HTTP/1.1 202 Accepted
 Content-Length: 0
@@ -121,13 +122,3 @@ server {
 If you wish to expose the proxy endpoints directly to the public, rather than
 via an Nginx proxy scheme, pass the `-ssl-cert` and `-ssl-key` options along
 all other `-auth` parameters.
-
-## Public domain
-
-This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
-
-> This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
->
-> All contributions to this project will be released under the CC0
->dedication. By submitting a pull request, you are agreeing to comply
->with this waiver of copyright interest.

@@ -29,7 +29,7 @@ status: active
 # Description of the project
 description: >
   Proxy server that signs and authenticates HTTP requests using an HMAC
-  signature; uses the github.com/18F/hmacauth Go package
+  signature; uses the github.com/mbland/hmacauth Go package
 
 # Should be 'true' if the project has a continuous build (required)
 # values: true, false
@@ -76,8 +76,8 @@ stack:
 #     url: URL for the text of the license
 licenses:
   hmacproxy:
-    name: CC0
-    url: https://github.com/18F/hmacproxy/blob/master/LICENSE.md
+    name: ISC
+    url: https://github.com/mbland/hmacproxy/blob/master/LICENSE.md
 
 # Blogs or websites associated with project development
 #blog:
@@ -88,8 +88,8 @@ licenses:
 # - url: URL for the link
 #   text: Anchor text for the link
 links:
-- url: https://github.com/18F/hmacauth/
-  text: 18F/hmacauth Go library
+- url: https://github.com/mbland/hmacauth/
+  text: mbland/hmacauth Go library
 - url: https://www.npmjs.com/package/hmac-authentication
   text: hmac-authentication npm
 - url: https://rubygems.org/gems/hmac_authentication
@@ -97,7 +97,7 @@ links:
 
 # Email addresses of points-of-contact
 contact:
-- url: mailto:michael.bland@acm.org
+- url: mailto:mbland@acm.org
   text: Mike Bland
-- url: https://github.com/18F/hmacproxy/issues
-  text: 18F/hmacproxy issues
+- url: https://github.com/mbland/hmacproxy/issues
+  text: mbland/hmacproxy issues

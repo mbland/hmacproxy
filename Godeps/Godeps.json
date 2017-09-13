@@ -1,11 +1,11 @@
 {
-	"ImportPath": "github.com/18F/hmacproxy",
+	"ImportPath": "github.com/mbland/hmacproxy",
 	"GoVersion": "go1.4.3",
 	"Deps": [
 		{
-			"ImportPath": "github.com/18F/hmacauth",
-			"Comment": "1.0.0",
-			"Rev": "f9bb4535d46d33bcf07fa38e9547da5cd06ec32a"
+			"ImportPath": "github.com/mbland/hmacauth",
+			"Comment": "1.0.2",
+			"Rev": "44256dfd4bfa7594cfa73587a464ca890e85971a"
 		},
 		{
 			"ImportPath": "github.com/onsi/ginkgo",

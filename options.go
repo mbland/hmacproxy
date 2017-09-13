@@ -4,7 +4,7 @@ import (
 	"crypto"
 	"errors"
 	"flag"
-	"github.com/18F/hmacauth"
+	"github.com/mbland/hmacauth"
 	"net/url"
 	"os"
 	"strings"
