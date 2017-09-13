@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/18F/hmacauth"
+	"github.com/mbland/hmacauth"
 	"log"
 	"net/http"
 	"net/http/httputil"
